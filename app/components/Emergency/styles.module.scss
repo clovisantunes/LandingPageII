@@ -1,0 +1,34 @@
+.emergency_container{
+    width: 100%;
+    height: 32em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5FBDC4;
+    background-image: url('../../assets/emergencyImage.png');
+    h1{
+        color: var(--colors-secondary-600);
+        margin-bottom:16;
+    }
+    h2{
+        color: white;
+        margin-bottom: 2em;
+    }
+}
+.subTextEmergency{
+    width: 48%;
+}
+.buttonEmergency{
+    width: 16%;
+    height: 4em;
+    color: var(--colors-secondary-100);
+}
+@media (max-width:840px) {
+    .subTextEmergency{
+        width: 90%;
+    }
+    .buttonEmergency{
+        width: 50%;
+    }
+}

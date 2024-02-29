@@ -1,0 +1,208 @@
+.services_contaner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: 50%;
+    background-color: white;
+
+    .services_Card{
+        width: 80%;
+        height: 60%;
+        padding: 2em;   
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 4em;
+        .servicesItem{
+            position: relative;
+            width: 100%;
+            height: 16em;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
+            z-index: 5;
+            font-size: 12px;
+            border-radius: 16px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .serviceName{
+                width: 100%;
+                height: 48px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                bottom: 0;
+                background-color: #6F4993;
+                color: white;
+                
+            }
+            .serviceDescription{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                justify-content: center;
+                flex-direction: column;
+                padding: 16px;
+                align-items: center;
+                background-color: #5FBDC4;
+                color: white;
+                display: none;
+                top: 0;
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                .titleSub{
+                    margin-bottom: 8px;
+                }
+                .buttonCardDescription{
+                    width: 50%;
+                    height: 2em;
+                    margin-top: 15%;
+                    color: var(--colors-secondary-100);
+                    
+                    
+                }
+                
+            }
+            &:hover {
+               animation: rotateAnimation forwards 1s;
+               .serviceDescription{
+                    display: flex;
+                    animation: rotateAnimationDescripton forwards .5s;
+                }
+
+               
+            }
+            &:not(:hover) {
+                animation: rotateAnimationBackwards forwards 1s;
+                .serviceDescription{
+                    &:not(:hover) {   
+                        animation: rotateAnimationDescriptonBackwards forwards .5s;
+                    }
+                }
+            } 
+        }
+    }
+}
+.coments{
+    h2{
+        font-size: 12px;
+    }
+}
+
+.buttonServices{
+    width: 30%;
+    height: 4em;
+    border-radius: 8px;
+   color: var(--colors-secondary-100);
+}
+
+@keyframes rotateAnimation{
+    0% {
+        transform: perspective(100%) rotatex(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotatex(-180deg);
+    }
+}
+
+@keyframes rotateAnimationDescripton {
+    0% {
+        transform: perspective(1000px) rotatex(-170deg);
+        opacity: 0;
+   
+    }
+    39% {
+ 
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 0;
+        display: none;
+   
+        animation-play-state: paused;
+    }
+    40% {
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 1;
+        display: flex;
+ 
+        animation-play-state: running;
+    }
+    100% {
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 1;
+        display: flex;
+     
+    }
+}
+@keyframes rotateAnimationBackwards {
+    0% {
+        transform: perspective(1000px) rotatex(-180deg);
+    
+    }
+    100% {
+        transform: perspective(100%) rotatex(0deg);
+   
+    }
+}
+@keyframes rotateAnimationDescriptonBackwards {
+    0% {
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 1;
+        display: flex;
+
+    }
+    39% {
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 1;
+        display: flex;
+  
+    }
+    40% {
+        transform: perspective(1000px) rotatex(180deg);
+        opacity: 0;
+        display: none;
+
+    }
+    100% {
+        transform: perspective(1000px) rotatex(-170deg);
+        opacity: 0;
+
+    }
+}
+@media (max-width:1080px) {
+    .services_contaner{
+        width: 100%;
+        .services_Card{
+            width: 100%;
+            gap: 2em;
+            .servicesItem{
+                h2{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:780px) {
+    .services_contaner{    
+        .services_Card{
+            grid-template-columns: repeat(2, 1fr); 
+            
+        }
+    }
+}
+@media (max-width:580px) {
+    .services_contaner{    
+        .services_Card{
+            grid-template-columns: repeat(1, 1fr); 
+            
+        }
+    }
+}

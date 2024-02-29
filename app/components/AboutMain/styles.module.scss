@@ -1,0 +1,44 @@
+.aboutMain_container{
+    width: 100%;
+    height: 28em;
+    background-color: var( --colors-neutral-50);
+    display: flex;
+    flex-direction: row;
+
+    .localAbout{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a{
+            font-size: 28px;
+            font-weight: 300;
+            color: #6F4993;
+            cursor: pointer;
+        }
+        .pathlocal{
+            display: flex;
+        }
+        .aboutText{
+            width: 80%;
+            margin-top: 2em;
+        }
+    }
+    .imageAbout{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:780px) {
+    .aboutMain_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 6em;
+    }
+}
