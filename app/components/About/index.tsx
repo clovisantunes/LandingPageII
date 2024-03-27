@@ -19,7 +19,7 @@ export default function About(){
                             weight='500'
                         />
                         <TitlteText 
-                            size='36px'
+                            size='18px'
                             text='Lorem ipusm'
                             weight='500'
                         />

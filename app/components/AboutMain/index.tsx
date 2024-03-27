@@ -14,9 +14,9 @@ export default function AboutMain({text, urlImage}: aboutMainProps){
                     <div className={styles.pathlocal}>
                     <a href='/'>
                     <TitlteText 
-                        size='28px'
+                        size='24px'
                         text='Inicio'
-                        weight='300'
+                        weight='200'
                     />
                     </a>
                     <TitlteText 
@@ -32,7 +32,7 @@ export default function AboutMain({text, urlImage}: aboutMainProps){
                     </div>
                     <div className={styles.aboutText}>
                            <SubText 
-                            size='28px'
+                            size='24px'
                             text='Lorem Ipsum Clínica Veterinária 24 horas Sapiranga'
                             weight='400'
                            />                              

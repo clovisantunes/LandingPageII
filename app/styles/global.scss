@@ -65,7 +65,12 @@
     }
   
     body {
-      background-color: var(--colors-secondary-100);
+      main{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      }
       a {
         color: var(--colors-neutral-100);
         text-decoration: none;

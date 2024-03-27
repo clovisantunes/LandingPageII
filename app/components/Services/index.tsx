@@ -46,6 +46,7 @@ export default function Services(){
     };
     
     const serviceItems = Object.keys(servicesData.service).map((key) => (
+        
         <div key={key} className={styles.servicesItem} id={key}>
             <img src={servicesData.images[key]} alt={key} />
             <div className={styles.serviceName}>
@@ -82,6 +83,12 @@ export default function Services(){
 
     return(
         <div className={styles.services_contaner}>
+            <TitlteText 
+                size='36px'
+                text='ESPECIALIDADES'
+                weight='400'
+
+            />
             <div className={styles.services_Card}>
                 {serviceItems}
             </div>

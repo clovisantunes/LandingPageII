@@ -21,25 +21,25 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.containerContainer}>
-          <SubText size="36px" text="Contato" weight="600" />
+          <SubText size="36px" text="Contato" weight="400" />
           <div className={styles.contactItems}>
             <MdOutlineMailOutline />
-            <SubText size="16px" text="loremipsumpet@gmail.com" weight="600" />
+            <SubText size="16px" text="loremipsumpet@gmail.com" weight="400" />
           </div>
           <div className={styles.contactItems}>
             <FaWhatsapp />
-            <SubText size="16px" text="(51)9xxxx-xxxx" weight="600" />
+            <SubText size="16px" text="(51)9xxxx-xxxx" weight="400" />
           </div>
           <div className={styles.contactItems}>
             <BsFillTelephoneFill />
-            <SubText size="16px" text="(51)9xxxx-xxxx" weight="600" />
+            <SubText size="16px" text="(51)9xxxx-xxxx" weight="400" />
           </div>
         </div>
         <div className={styles.addresContainer}>
           <SubText size="28px" text="Nosso endereço" weight="400" />
           <div className={styles.addresItems}>
             <IoLocationOutline />
-            <SubText size="24px" text="Cidade-Estado, 93000-000" weight="400" />
+            <SubText size="16px" text="Cidade-Estado, 93000-000" weight="400" />
           </div>
         </div>
         <div className={styles.hoursContainer}>

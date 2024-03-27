@@ -10,13 +10,13 @@ export default function Main() {
         <div className={styles.shadow} />
         <div className={styles.containerCenter}>
           <div className={styles.titleMain}>
-            <TitlteText size="64px" weight="bold" text="Lorem ipusm" />
+            <TitlteText size="48px" weight="bold" text="Lorem ipusm" />
           </div>
           <div className={styles.subTitle}>
-            <TitlteText size="36px" weight="bold" text="Centro veterinário" />
+            <TitlteText size="24px" weight="bold" text="Centro veterinário" />
           </div>
           <div className={styles.subText}>
-            <SubText size="18px" weight="400" text="Atendimento 24 horas"/>
+            <SubText size="16px" weight="400" text="Atendimento 24 horas"/>
           </div>
           <div className={styles.buttonCards}>
             <div className={styles.button}>
