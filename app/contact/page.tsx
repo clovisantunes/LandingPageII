@@ -6,7 +6,6 @@ import { ButtonMain, ButtonUi } from "../components/UI/ButtonUi";
 import TitlteText from "../components/UI/TitleText";
 import styles from './styles.module.scss';
 
-
 export default function Contact(){
     return(
         <>
