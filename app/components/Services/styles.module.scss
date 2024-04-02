@@ -1,5 +1,5 @@
 .services_contaner{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     padding: 4em;
@@ -83,7 +83,7 @@
                
             }
             &:not(:hover) {
-                animation: rotateAnimationBackwards forwards 1s;
+                animation: rotateAnimationBackwards forwards .6s;
                 .serviceDescription{
                     &:not(:hover) {   
                         animation: rotateAnimationDescriptonBackwards forwards .5s;

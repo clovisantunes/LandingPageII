@@ -27,7 +27,7 @@ export default function Contact(){
                     <input placeholder="email"/>
                 </div>
                 <div className={styles.formItem}>
-                    <input placeholder="numero para contato"/>
+                    <input placeholder="Telefone"/>
                     <input placeholder="especialidade"/>
                 </div>
                 <div className={styles.textAreaItem}>

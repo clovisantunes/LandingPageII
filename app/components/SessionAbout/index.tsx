@@ -6,6 +6,7 @@ export default function SessionAbout(){
     return(
         <>
         <div className={styles.session_container}>
+            <div className={styles.sessionCard}>
         <div className={styles.imgItem}>
                 <img src='../assets/badgeDog.png'></img>
             </div>
@@ -27,7 +28,7 @@ export default function SessionAbout(){
                 />
             </div>
             
-        
+            </div>
         </div>
         </>
     )

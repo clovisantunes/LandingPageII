@@ -25,7 +25,7 @@ export default function About(){
                         />
                         <SubText 
                             size='24px'
-                            text='Com uma estrutura completa, nossas unidades estão preparadas para realizar atendimentos 24h, tomando as medidas imediatas para tratamento. Aqui você conta com os melhores médicos veterinários e profissionais da área durante todas as etapas do atendimento.'
+                            text='O Centro Veterinário Loren Pet 24 horas, localizado na cidade de Loren Ipsun, surgiu de um desejo de evolução pessoal e profissional. Aqui colocamos em prática tudo aquilo em que acreditamos, preparando com carinho todos os ambientes, visando proporcionar o máximo de conforto para nossos pacientes e o máximo de confiança e segurança para nossos clientes.'
                             weight='400'
                         />
                     </div>

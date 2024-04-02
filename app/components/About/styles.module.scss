@@ -1,20 +1,19 @@
 .about_container{
-   width: 80%;
+   width: 70%;
    margin-top: 2em;
    margin-bottom: 2em;
    display: flex;
    flex-direction: row;
-   background-color: var( --colors-neutral-50);
 }
 .image_container{
-    width: 50%;
-    height: 24em;
+    width: 60%;
+    height: 28em;
     display: flex;
     align-items: center;
     justify-content: center;
     .imageCard{
         width: 70%;
-        height: 60%;
+        height: 100%;
         background-image: url('../../assets/pet.webp');
         background-size: 100%;
         border-radius: 16px;
@@ -24,7 +23,7 @@
     }
 }
 .textAbout{
-    width: 48%;
+    width: 40%;
     height: 100%;
     padding: 16px;
     display: flex;
