@@ -13,7 +13,7 @@ export default function Contact(){
             <div className={styles.contact_container}>
             <AboutMain 
                 text="Contato"
-                urlImage="../assets/dogphone.png"
+                urlImage="../assets/dogPhone.png"
             />
             <div className={styles.formContainer}>
                 <TitlteText 
@@ -22,7 +22,7 @@ export default function Contact(){
                     weight="400"
                 />
                 <div className={styles.formItem}>
-                    <input placeholder="name"/>
+                    <input placeholder="nome"/>
                     <input placeholder="email"/>
                 </div>
                 <div className={styles.formItem}>
